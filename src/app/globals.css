@@ -157,3 +157,6 @@ body {
   }
 }
 
+.perspective-class {
+  perspective: 1000px;
+}

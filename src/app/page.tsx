@@ -23,7 +23,7 @@ export default function Page() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
         >
-          Hi, I'm <span className="text-blue-500">Mohamed Allaoui</span>, a Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications. I enjoy turning ideas into innovative solutions and delivering impactful digital experiences. Always eager to learn and grow, I strive to make a difference through technology.
+          Hi, I&apos;m <span className="text-blue-500">Mohamed Allaoui</span>, a Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications. I enjoy turning ideas into innovative solutions and delivering impactful digital experiences. Always eager to learn and grow, I strive to make a difference through technology.
           <div className="mt-4 hidden sm:block">
             <a
               href="/assets/Cv-Allaoui-developpeur.pdf"

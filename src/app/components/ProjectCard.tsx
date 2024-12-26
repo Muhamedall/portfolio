@@ -7,12 +7,15 @@ import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb"; // Import the website icon
 import Modal from "./Modal";
 
+import { StaticImageData } from "next/image";
+
 interface ProjectProps {
   title: string;
   description: string;
   github?: string; // Make this optional
   website?: string; // Add a new property for the website
-  images: string[];
+  images: StaticImageData[]; // Change type to StaticImageData[]
+  style?: React.CSSProperties; 
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, website, images }) => {
@@ -23,7 +26,8 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
   const handlePrev = () => setCurrentImage((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
   return (
-    <CardContainer style={{ perspective: "1000px" }}>
+    <CardContainer className="perspective-class">
+
       <CardBody className="bg-gray-50 dark:bg-black w-auto sm:w-[40rem] p-6 rounded-xl">
         <div className="flex justify-between">
           <div>
@@ -56,7 +60,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
         <Modal
           isOpen={isModalOpen}
           onClose={() => setIsModalOpen(false)}
-          images={images}
+          images={images.map((image) => image.src)} 
           currentImage={currentImage}
           onNext={handleNext}
           onPrev={handlePrev}
