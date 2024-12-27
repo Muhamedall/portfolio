@@ -119,7 +119,7 @@ export default function DashboardLayout({
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {["Home", "About", "Projects", "Contact"].map((menu) => (
+              {["Home", "About", "Projects" ,"Education", "Contact"].map((menu) => (
                 <Link
                   key={menu}
                   href={`#${menu.toLowerCase()}`}
