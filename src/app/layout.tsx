@@ -17,31 +17,30 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "Mohamed Allaoui",
-  description: "Portfolio Mohamed Allaoui",
+  description: "Portfolio of Mohamed Allaoui",
+  viewport: "width=device-width, initial-scale=1", // Use the `viewport` property directly
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
-  const generateStars = (num: number) => {
-    return Array.from({ length: num }).map((_, index) => (
+}) {
+  const generateStars = (num: number) =>
+    Array.from({ length: num }).map((_, index) => (
       <div
         key={index}
         className="star"
         style={{
-          top: `${Math.random() * 100}vh`, // Random vertical position
-          left: `${Math.random() * 100}vw`, // Random horizontal position
-          animationDuration: `${Math.random() * 2 + 1}s`, // Random twinkle speed
+          top: `${Math.random() * 100}vh`,
+          left: `${Math.random() * 100}vw`,
+          animationDuration: `${Math.random() * 2 + 1}s`,
         }}
       />
     ));
-  };
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <head />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -51,12 +50,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* Background elements */}
-          <div className="stars">
-            {generateStars(100)} {/* Generate 100 stars */}
-          </div>
-
-          
+          <div className="stars">{generateStars(100)}</div>
           <Navbar>{children}</Navbar>
         </ThemeProvider>
       </body>
