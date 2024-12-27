@@ -68,7 +68,7 @@ export default function Page() {
   return (
     <section className="mt-[20%] px-6 py-12 ">
       <motion.h1
-        className="text-xl md:text-5xl font-extrabold text-center mb-8 dark:text-white"
+        className="md:text-3xl  font-extrabold  mb-8 dark:text-white"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
