@@ -5,6 +5,7 @@ import Picture from './pic.jpeg';
 import Image from 'next/image';
 import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
+import EducationPage from './education/page';
 
 export default function Page() {
   return (
@@ -18,7 +19,7 @@ export default function Page() {
       >
         {/* Text Section */}
         <motion.h1
-          className="text-center text-xl sm:text-xl font-medium max-w-2xl leading-relaxed sm:text-left"
+          className="text-center text-xl sm:text-2xl font-medium max-w-2xl leading-relaxed sm:text-left"
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 1 }}
@@ -79,6 +80,11 @@ export default function Page() {
       <section id="projects" className="min-h-screen">
         <ProjectsPage />
       </section>
+      <section id="education" className="min-h-screen">
+        <EducationPage/>
+      </section>
+
+
     </>
   );
 }

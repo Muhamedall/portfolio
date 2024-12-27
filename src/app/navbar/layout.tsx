@@ -47,12 +47,22 @@ export default function DashboardLayout({
               >
                 Projects
               </Link>
+
+
+              <Link
+                href="#education"
+                className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
+              >
+                Education
+              </Link>
               <Link
                 href="/contact"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
+               
                 Contact
               </Link>
+
             </div>
 
             {/* Theme Toggle and Language Button */}
