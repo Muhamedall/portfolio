@@ -66,7 +66,7 @@ export default function Page() {
   ];
 
   return (
-    <section className="mt-[20%] px-6 py-12 ">
+    <section className="mt-[20%] px-2 py-2 ">
       <motion.h1
         className="text-xl md:text-5xl font-extrabold text-center mb-8 dark:text-white"
         initial={{ opacity: 0, y: -50 }}
@@ -100,7 +100,7 @@ export default function Page() {
           )}
         </motion.div>
         <motion.div
-          className="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-6 dark:bg-gray-700 dark:shadow-xl dark:text-gray-300"
+          className="max-w-2xl mx-auto bg-white shadow-lg rounded-lg p-6 dark:bg-gray-700 dark:shadow-xl dark:text-gray-300"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.3, duration: 1 }}
