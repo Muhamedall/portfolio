@@ -18,7 +18,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Mohamed Allaoui",
   description: "Portfolio of Mohamed Allaoui",
-  viewport: "width=device-width, initial-scale=1", // Use the `viewport` property directly
+  
 };
 
 export default function RootLayout({

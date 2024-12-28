@@ -1,6 +1,8 @@
+// Modal.tsx
 import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -17,7 +19,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, image }) => {
         <Image
           src={image}
           alt="Project Image"
-          className="rounded-xl"
+          className="rounded-xl object-cover"
           width={800}
           height={600}
         />

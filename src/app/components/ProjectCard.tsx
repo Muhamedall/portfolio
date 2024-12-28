@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FaGithub } from "react-icons/fa";
 import { TbWorld } from "react-icons/tb";
@@ -12,21 +12,12 @@ interface ProjectProps {
   description: string;
   github?: string;
   website?: string;
-  images: StaticImageData[];
+  images: StaticImageData; // Single image now
   tags: string[]; // Added the tags property
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, website, images, tags }) => {
-  const [currentImage, setCurrentImage] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-
-  // Auto-slide images every 3 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 3000);
-    return () => clearInterval(interval);
-  }, [images.length]);
 
   return (
     <div className="bg-white dark:bg-black dark:hover:shadow-white w-full sm:w-[30rem] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
@@ -49,31 +40,32 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
           )}
         </div>
 
-     
-
-        <div className="relative">
-          <Image
-            src={images[currentImage]}
-            alt="Project Image"
-            className="rounded-xl cursor-pointer"
-            onClick={() => setIsModalOpen(true)}
-            loading="lazy"
-          />
-        </div>
-           {/* Tags Section */}
-           <div className="flex flex-wrap gap-2 space-x-2 mt-2">
+        {/* Tags Section */}
+        <div className="grid grid-cols-2 sm:grid sm:grid-cols-3 gap-2 mt-2">
           {tags.map((tag, index) => (
-            <span key={index} className="bg-blue-200 text-blue-800 text-sm py-1 px-3 rounded-lg">
+            <span key={index} className="bg-blue-200 text-blue-800 text-sm py-1 px-2 sm:px-3 rounded-lg">
               {tag}
             </span>
           ))}
+        </div>
+
+        <div className="relative">
+          <Image
+            src={images} // Single image
+            alt="Project Image"
+            className=" cursor-pointer object-cover"
+            width={550} // Set a fixed width
+            height={400} // Set a fixed height
+            onClick={() => setIsModalOpen(true)}
+            loading="lazy"
+          />
         </div>
       </div>
 
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
-        image={images[currentImage]}
+        image={images} // Pass single image
       />
     </div>
   );

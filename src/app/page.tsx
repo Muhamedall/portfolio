@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Picture from './pic.jpeg';
+import Picture from './profile.jpeg';
 import Image from 'next/image';
 import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
@@ -45,7 +45,7 @@ export default function Page() {
 
         {/* Image Section */}
         <motion.div
-          className="relative w-32 h-32 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg"
+          className="relative w-40 h-40 sm:w-64 sm:h-64 rounded-full overflow-hidden shadow-lg"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.6, duration: 1 }}
@@ -74,15 +74,17 @@ export default function Page() {
           </div>
       </motion.div>
       </section>
-      <section id="about" className="min-h-screen">
-        <AboutPage />
-      </section>
       <section id="projects" className="min-h-screen">
         <ProjectsPage />
       </section>
       <section id="education" className="min-h-screen">
         <EducationPage/>
       </section>
+      <section id="about" className="min-h-screen">
+        <AboutPage />
+      </section>
+     
+    
 
 
     </>
