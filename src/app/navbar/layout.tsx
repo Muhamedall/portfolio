@@ -47,6 +47,12 @@ export default function DashboardLayout({
               >
                 Projects
               </Link>
+              <Link
+                href="#experience"
+                className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
+              >
+               Experiences
+              </Link>
 
 
               <Link
@@ -119,7 +125,7 @@ export default function DashboardLayout({
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {["Home", "About", "Projects" ,"Education", "Contact"].map((menu) => (
+              {["Home", "About", "Projects" ,"Experiences" ,"Education", "Contact"].map((menu) => (
                 <Link
                   key={menu}
                   href={`#${menu.toLowerCase()}`}

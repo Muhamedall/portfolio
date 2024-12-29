@@ -6,11 +6,11 @@ import Image from 'next/image';
 import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
 import EducationPage from './education/page';
-
+import ExperiencePage from './experience/experience';
 export default function Page() {
   return (
     <>
-    <section id="home">
+    <section id="home" className='mt-4'>
       <motion.div
         className="flex flex-col sm:flex-row items-center gap-6 sm:gap-[25%] mt-10 sm:mt-20"
         initial={{ opacity: 0, y: 20 }}
@@ -77,6 +77,10 @@ export default function Page() {
       <section id="projects" className="min-h-screen">
         <ProjectsPage />
       </section>
+      <section id="experience" className="min-h-screen">
+        <ExperiencePage />
+      </section>
+     
       <section id="education" className="min-h-screen">
         <EducationPage/>
       </section>

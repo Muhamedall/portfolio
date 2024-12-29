@@ -23,7 +23,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
     <div className="bg-white dark:bg-black dark:hover:shadow-white w-full sm:w-[30rem] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
       <div className="flex flex-col space-y-4">
         <div>
-          <h2 className="text-2xl font-bold text-gray-800 dark:text-white">{title}</h2>
+          <h2 className="text-xl font-bold text-gray-800 dark:text-white">{title}</h2>
           <p className="text-gray-600 dark:text-gray-300">{description}</p>
         </div>
 
@@ -50,15 +50,18 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
         </div>
 
         <div className="relative">
-          <Image
-            src={images} // Single image
-            alt="Project Image"
-            className=" cursor-pointer object-cover"
-            width={550} // Set a fixed width
-            height={400} // Set a fixed height
-            onClick={() => setIsModalOpen(true)}
-            loading="lazy"
-          />
+         
+       <Image
+       src={images}
+       alt="Project Image"
+       layout="responsive"
+       width={550}
+       height={400}
+       className="rounded-lg mt-4"
+       onClick={() => setIsModalOpen(true)}
+       loading="lazy"
+     />
+     
         </div>
       </div>
 
