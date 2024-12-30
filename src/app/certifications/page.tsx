@@ -9,7 +9,7 @@ const CertificationsPage: React.FC = () => {
           My Certifications
         </h1>
         <p className=" text-gray-700 dark:text-gray-300 mb-12">
-          Here is a list of certifications I've achieved, showcasing my expertise and dedication to learning.
+          Here is a list of certifications I&apos;ve achieved, showcasing my expertise and dedication to learning.
         </p>
         <CertificationsCarousel />
       </section>
