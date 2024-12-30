@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import {
   SiTypescript, SiNextdotjs, SiBootstrap, SiTailwindcss,
-  SiMongodb, SiPhp, SiJquery, SiGit
+  SiMongodb, SiPhp, SiJquery, SiGit,SiExpress
 } from "react-icons/si";
 import { DiDatabase, DiScrum } from "react-icons/di";
 import { BsPcDisplay } from "react-icons/bs";
@@ -25,10 +25,12 @@ export default function About() {
     { name: "React", icon: <FaReact color="#61DAFB" /> },
     { name: "Next.js", icon: <SiNextdotjs color="#000" /> },
     { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
+    { name: "Express.js", icon: <SiExpress color="#000" /> },
     { name: "Python", icon: <FaPython color="#306998" /> },
     { name: "Laravel", icon: <FaLaravel color="#FF2D20" /> },
     { name: "MySQL", icon: <DiDatabase color="#00758F" /> },
     { name: "MongoDB", icon: <SiMongodb color="#47A248" /> },
+  
     { name: "PHP", icon: <SiPhp color="#777BB4" /> },
     { name: "Git", icon: <SiGit color="#F05032" /> },
     { name: "GitHub", icon: <FaGithub color="#181717" /> },
