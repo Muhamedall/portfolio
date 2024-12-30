@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { MdLightMode, MdNightlight } from "react-icons/md";
-import { GrLanguage } from "react-icons/gr";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
@@ -42,17 +41,18 @@ export default function DashboardLayout({
                 About
               </Link>
               <Link
-                href="#projects"
-                className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
-              >
-                Projects
-              </Link>
-              <Link
                 href="#experiences"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
                Experiences
               </Link>
+              <Link
+                href="#projects"
+                className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
+              >
+                Projects
+              </Link>
+  
 
 
               <Link
@@ -62,7 +62,7 @@ export default function DashboardLayout({
                 Education
               </Link>
               <Link
-                href="/contact"
+                href="#contact"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
                
@@ -72,19 +72,17 @@ export default function DashboardLayout({
             </div>
 
             {/* Theme Toggle and Language Button */}
-            <div className="flex items-center gap-6 ml-15  ">
+            <div className=" ml-[60%] mb-2 sm:ml-0 sm:mb-0 ">
               <div className="mt-2">
               <button onClick={() => setTheme("light")}>
-                <MdLightMode className="text-amber-300 text-3xl hidden dark:block" />
+                <MdLightMode className="text-amber-300 text-xl sm:text-2xl hidden dark:block" />
               </button>
               <button onClick={() => setTheme("dark")}>
-                <MdNightlight className="text-white text-3xl dark:hidden" />
+                <MdNightlight className="text-white text-xl sm:text-2xl dark:hidden" />
               </button>
               </div>
               
-              <button>
-                <GrLanguage className="text-white text-3xl" />
-              </button>
+            
             </div>
 
             {/* Mobile Menu Button */}
@@ -125,7 +123,7 @@ export default function DashboardLayout({
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {["Home", "About", "Projects" ,"Experiences" ,"Education", "Contact"].map((menu) => (
+              {["Home", "About", "Experiences" , "Projects","Education", "Contact"].map((menu) => (
                 <Link
                   key={menu}
                   href={`#${menu.toLowerCase()}`}

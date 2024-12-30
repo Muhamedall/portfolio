@@ -7,6 +7,7 @@ import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
 import EducationPage from './education/page';
 import ExperiencePage from './experience/experience';
+import ContactPage from './contact/page';
 export default function Page() {
   return (
     <>
@@ -74,18 +75,22 @@ export default function Page() {
           </div>
       </motion.div>
       </section>
-      <section id="projects" className="min-h-screen">
-        <ProjectsPage />
-      </section>
-      <section id="experiences" className="min-h-screen">
+      <section id="experiences" className="min-h-screen mt-[20%]">
         <ExperiencePage />
       </section>
+      <section id="projects" className="min-h-screen mt-10">
+        <ProjectsPage />
+      </section>
+      
      
       <section id="education" className="min-h-screen">
         <EducationPage/>
       </section>
       <section id="about" className="min-h-screen">
         <AboutPage />
+      </section>
+      <section id="contact" className="min-h-screen">
+        < ContactPage />
       </section>
      
     

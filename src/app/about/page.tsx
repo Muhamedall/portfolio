@@ -42,7 +42,7 @@ export default function About() {
   return (
     <section className="px-6 py-12">
       <motion.h1
-        className="text-lg md:text-3xl font-extrabold mb-6 text-center dark:text-white"
+        className="text-3xl font-bold text-gray-900 dark:text-white text-center sm:text-left   mb-8"
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
@@ -50,7 +50,7 @@ export default function About() {
         About Me
       </motion.h1>
       <motion.p
-        className="max-w-3xl mx-auto text-lg text-center leading-relaxed text-gray-700 dark:text-gray-300"
+        className=" text-lg text-center sm:text-left leading-relaxed text-gray-700 dark:text-gray-300"
         style={{
           display: "-webkit-box",
           WebkitBoxOrient: "vertical",
