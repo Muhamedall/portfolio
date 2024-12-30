@@ -77,7 +77,7 @@ export default function Page() {
       <section id="projects" className="min-h-screen">
         <ProjectsPage />
       </section>
-      <section id="experience" className="min-h-screen">
+      <section id="experiences" className="min-h-screen">
         <ExperiencePage />
       </section>
      

@@ -48,7 +48,7 @@ export default function DashboardLayout({
                 Projects
               </Link>
               <Link
-                href="#experience"
+                href="#experiences"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
                Experiences
