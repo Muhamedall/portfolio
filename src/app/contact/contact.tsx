@@ -75,8 +75,8 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto flex items-center justify-center py-12 px-6">
-      <div className="max-w-2xl w-full shadow-lg rounded-lg p-6 space-y-8">
+    <div className="w-full max-w-5xl mx-auto flex items-center justify-center py-12 px-6 ">
+      <div className="max-w-2xl w-full shadow-lg rounded-lg p-6 space-y-8 dark:bg-black">
         <h2 className="text-3xl font-bold text-center">Contact Us</h2>
         {formStatus && (
           <p

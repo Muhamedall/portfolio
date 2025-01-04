@@ -3,28 +3,41 @@
 import React, { useState } from "react";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 import Link from "next/link";
+
+
 import { useTheme } from "next-themes";
 
-export default function DashboardLayout({
-  children,
-}: {
+
+interface DashboardLayoutProps {
   children: React.ReactNode;
-}) {
+}
+
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const [isOpen, setIsOpen] = useState(false);
   const { setTheme } = useTheme();
 
   return (
     <section className="min-h-screen bg-gray-100 dark:bg-gray-900">
       {/* Navigation Bar */}
-      <nav className="bg-stone-600 ">
-        <div className=" mx-auto px-4 sm:px-6 lg:px-8 ">
+      <nav className="bg-stone-600 dark:bg-black">
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
+            <div className="flex flex-col items-center">
             <div>
-              <Link href="/" className="text-white font-bold text-lg">
-                MyLogo
-              </Link>
-            </div>
+  <Link href="/" className="flex items-center">
+    <span
+      className="text-white font-bold text-3xl transition-transform duration-300 hover:scale-110"
+     
+    >
+      <span className="text-blue-400">&lt;</span>ﷴ<span className="text-blue-400">/&gt;</span>
+    </span>
+  </Link>
+</div>
+
+
+</div>
+
 
             {/* Desktop Menu */}
             <div className="hidden md:flex items-center space-x-4">
@@ -44,7 +57,7 @@ export default function DashboardLayout({
                 href="#experiences"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
-               Experiences
+                Experiences
               </Link>
               <Link
                 href="#projects"
@@ -52,9 +65,6 @@ export default function DashboardLayout({
               >
                 Projects
               </Link>
-  
-
-
               <Link
                 href="#education"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
@@ -65,24 +75,20 @@ export default function DashboardLayout({
                 href="#contact"
                 className="text-white hover:bg-stone-400 px-3 py-2 rounded-md text-lg font-medium"
               >
-               
                 Contact
               </Link>
-
             </div>
 
             {/* Theme Toggle and Language Button */}
-            <div className=" ml-[60%] mb-2 sm:ml-0 sm:mb-0 ">
+            <div className="ml-[60%] mb-2 sm:ml-0 sm:mb-0">
               <div className="mt-2">
-              <button onClick={() => setTheme("light")}>
-                <MdLightMode className="text-amber-300 text-xl sm:text-2xl hidden dark:block" />
-              </button>
-              <button onClick={() => setTheme("dark")}>
-                <MdNightlight className="text-white text-xl sm:text-2xl dark:hidden" />
-              </button>
+                <button onClick={() => setTheme("light")}>
+                  <MdLightMode className="text-amber-300 text-xl sm:text-2xl hidden dark:block" />
+                </button>
+                <button onClick={() => setTheme("dark")}>
+                  <MdNightlight className="text-white text-xl sm:text-2xl dark:hidden" />
+                </button>
               </div>
-              
-            
             </div>
 
             {/* Mobile Menu Button */}
@@ -123,7 +129,7 @@ export default function DashboardLayout({
         {isOpen && (
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {["Home", "About", "Experiences" , "Projects","Education", "Contact"].map((menu) => (
+              {["Home", "About", "Experiences", "Projects", "Education", "Contact"].map((menu) => (
                 <Link
                   key={menu}
                   href={`#${menu.toLowerCase()}`}

@@ -3,16 +3,24 @@ import img1 from "../../../public/pictursProject1-StudentNest/Screenshot 2024-06
 import img2 from "../../../public/pictursProject2-Maranime/Capture d'écran 2024-02-15 214457.png";
 
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
-
+import img4 from '../../../public/pictursProject4-MyPortfolio/Screenshot 2025-01-04 024103.png';
 
 export const projects = [
+  {
+    title: "My Portfolio",
+    description: "A personal portfolio website showcasing Mohamed Allaoui's projects and skills.",
+    website: "https://portfolio-mohamedallaoui.vercel.app/",
+    images: img4,
+    tags: ["NextJs", "TypeScript", "TailwindCSS", "React", "NodeJs", "ExpressJs", "MySQL"],
+    key: 1,
+  },
   {
     title: "Student Nest",
     description: "Developed a student housing rental website with various features including secure payment and user profiles.",
     github: "https://github.com/Muhamedall/Project-fin-etude",
     images: img1,
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Laravel", "MySQL", "PhpMyAdmin", "Redux"],
-    key: 1,
+    key: 2,
   },
   {
     title: "marAnime",
@@ -20,7 +28,7 @@ export const projects = [
     github: "https://github.com/Muhamedall/Project-marAnimeM",
     images: img2,
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Strapi API"],
-    key: 2,
+    key: 3,
   },
   {
     title: "BlogDiaa",
@@ -28,6 +36,6 @@ export const projects = [
     website: "https://blogdiaa.free.nf/?i=1",
     images: img3,
     tags: ["HTML", "CSS", "TailwindCSS", "JavaScript", "PHP", "MySQL", "PhpMyAdmin"],
-    key: 3,
+    key: 4,
   },
 ];
