@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 import Link from "next/link";
-
+import Logo1 from './WhatsApp_Image_2025-01-05_at_16.37.23__2_-removebg-preview.png';
+import Image from "next/image";
 
 import { useTheme } from "next-themes";
 
@@ -25,14 +26,15 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             {/* Logo */}
             <div className="flex flex-col items-center">
             <div>
-  <Link href="/" className="flex items-center">
-    <span
-      className="text-white font-bold text-3xl transition-transform duration-300 hover:scale-110"
-     
-    >
-      <span className="text-blue-400">&lt;</span>ﷴ<span className="text-blue-400">/&gt;</span>
-    </span>
-  </Link>
+            <Link href="/" className="flex items-center">
+                <Image
+                  src={Logo1}
+                  alt="Logo"
+                  width={50}
+                  height={50}
+                  className="rounded-full"
+                />
+              </Link>
 </div>
 
 
