@@ -3,7 +3,7 @@ import img1 from "../../../public/pictursProject1-StudentNest/Screenshot 2024-06
 import img2 from "../../../public/pictursProject2-Maranime/Capture d'écran 2024-02-15 214457.png";
 
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
-import img4 from '../../../public/pictursProject4-MyPortfolio/Screenshot 2025-01-04 024103.png';
+import img4 from '../../../public/pictursProject4-MyPortfolio/Screenshot 2025-01-05 164719.png';
 
 export const projects = [
   {
