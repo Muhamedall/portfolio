@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Picture from './profile.jpeg';
+import Picture from './profile.png';
 
 import Image from 'next/image';
 import AboutPage from './about/page';
@@ -30,9 +30,10 @@ export default function Page() {
           Hi, I&apos;m <span className="text-blue-500">Mohamed Allaoui</span>, a Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications. I enjoy turning ideas into innovative solutions and delivering impactful digital experiences. Always eager to learn and grow, I strive to make a difference through technology.
           <div className="mt-4 hidden sm:block">
             <a
-              href="/assets/Resume-dev-mohamed-allaoui.pdf"
+              href="/assets/Resume-DEV-Mohamed-Allaoui.pdf"
               className="inline-flex items-center bg-stone-400 hover:bg-gray-400 text-white font-bold py-2 px-4 rounded"
               download
+              
             >
               <svg
                 className="fill-current w-4 h-4 mr-2"
