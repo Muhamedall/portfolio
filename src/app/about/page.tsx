@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import {
   FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs,
-  FaPython, FaLaravel, FaGithub
+  FaPython, FaLaravel, FaGithub , FaVuejs, FaAngular
 } from "react-icons/fa";
+import { } from "react-icons/fa";
+
 import {
   SiTypescript, SiNextdotjs, SiBootstrap, SiTailwindcss,
   SiMongodb, SiPhp, SiJquery, SiGit, SiExpress
@@ -27,6 +29,9 @@ export default function About() {
     { name: "Next.js", icon: <SiNextdotjs color="#000" /> },
     { name: "Node.js", icon: <FaNodeJs color="#339933" /> },
     { name: "Express.js", icon: <SiExpress color="#000" /> },
+    { name: "Vue.js", icon: <FaVuejs color="#42b883" /> },
+{ name: "Angular", icon: <FaAngular color="#dd1b16" /> },
+
     { name: "Python", icon: <FaPython color="#306998" /> },
     { name: "Laravel", icon: <FaLaravel color="#FF2D20" /> },
     { name: "MySQL", icon: <DiDatabase color="#00758F" /> },

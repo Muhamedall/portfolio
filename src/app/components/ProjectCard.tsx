@@ -12,8 +12,8 @@ interface ProjectProps {
   description: string;
   github?: string;
   website?: string;
-  images: StaticImageData; // Single image now
-  tags: string[]; // Added the tags property
+  images: StaticImageData; 
+  tags: string[];
 }
 
 const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, website, images, tags }) => {
