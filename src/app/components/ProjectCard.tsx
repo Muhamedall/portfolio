@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <div className="bg-white dark:bg-black dark:hover:shadow-white w-full sm:w-[30rem] p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+<div className="bg-white dark:bg-black dark:hover:shadow-white w-full p-6 rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
       <div className="flex flex-col space-y-4">
         <div>
         <div className="flex flex-row justify-between items-center">
@@ -48,7 +48,7 @@ const ProjectCard: React.FC<ProjectProps> = ({ title, description, github, websi
         
 
         {/* Tags Section */}
-        <div className="grid grid-cols-2 sm:grid sm:grid-cols-3 gap-2 mt-2">
+<div className="flex flex-wrap gap-2 mt-2">
           {tags.map((tag, index) => (
             <span key={index} className="bg-blue-200 text-blue-800 text-sm py-1 px-2 sm:px-3 rounded-lg">
               {tag}

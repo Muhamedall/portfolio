@@ -75,6 +75,14 @@ const Footer: React.FC = () => {
                   About
                 </a>
               </li>
+               <li>
+                <a
+                  href="#experiences"
+                  className="sm:text-xl hover:text-yellow-400 transition"
+                >
+                  Experiences
+                </a>
+              </li>
               <li>
                 <a
                   href="#projects"

@@ -20,6 +20,7 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "Mohamed Allaoui",
   description: "Portfolio of Mohamed Allaoui",
+ 
 };
 
 export default function RootLayout({

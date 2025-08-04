@@ -4,38 +4,53 @@ import img2 from "../../../public/pictursProject2-Maranime/Capture d'écran 2024
 
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
 import img4 from '../../../public/pictursProject4-MyPortfolio/Screenshot 2025-07-18 100648.png';
+import img5 from '../../../public/pictureProject4-MedNostalgia/Screenshot 2025-08-04 225051.png'
 
 export const projects = [
   {
+     id: 1,
+    title: "MedNostalgia",
+    description: "An advanced web app for scraping, organizing, and presenting nostalgic medical content using modern web technologies.",
+    github: "https://github.com/Muhamedall/nostalgia-project", 
+    images: img5,
+    tags: ["Python", "NextJs", "TypeScript", "Laravel", "TailwindCSS", "Shadcn UI"],
+   
+  },
+  {
+    
+    id: 2,
     title: "My Portfolio",
     description: "A personal portfolio website showcasing Mohamed Allaoui's projects and skills.",
     website: "https://portfolio-mohamedallaoui.vercel.app/",
     images: img4,
     tags: ["NextJs", "TypeScript", "TailwindCSS", "React", "NodeJs", "ExpressJs", "MySQL"],
-    key: 1,
+    
   },
-  {
+  { id: 3,
     title: "Student Nest",
     description: "Developed a student housing rental website with various features including secure payment and user profiles.",
     github: "https://github.com/Muhamedall/Project-fin-etude",
     images: img1,
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Laravel", "MySQL", "PhpMyAdmin", "Redux"],
-    key: 2,
+   
   },
   {
+    id: 4,
     title: "marAnime",
     description: "A platform for anime enthusiasts to browse, rate, and review anime series and movies.",
     github: "https://github.com/Muhamedall/Project-marAnimeM",
     images: img2,
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Strapi API"],
-    key: 3,
+    
   },
   {
+    id: 5,
     title: "BlogDiaa",
     description: "A blogging platform to share posts with features for image uploads and YouTube videos.",
     website: "https://blogdiaa.free.nf/?i=1",
     images: img3,
     tags: ["HTML", "CSS", "TailwindCSS", "JavaScript", "PHP", "MySQL", "PhpMyAdmin"],
-    key: 4,
+    
   },
+  
 ];
