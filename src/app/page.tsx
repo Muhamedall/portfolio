@@ -17,6 +17,7 @@ export default function Page() {
     <>
      <Head>
     <title>Mohamed Allaoui | Full Stack Developer</title>
+    <meta name="google-site-verification" content="KGVJCC9CTnHxW6UK_V-LfXurz0vFdwdhDtiSTTQDpfA" />
     <meta name="description" content="Portfolio website of Mohamed Allaoui, a Full Stack Developer specializing in modern web technologies like Next.js, Node.js, and Laravel." />
     <meta name="keywords" content="Mohamed Allaoui, Full Stack Developer, Web Developer Morocco, Next.js Portfolio, Node.js Developer" />
     <meta name="robots" content="index, follow" />
@@ -41,7 +42,7 @@ export default function Page() {
             transition={{ delay: 0.3, duration: 1 }}
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Hi, I'm <span className="text-blue-500">Mohamed Allaoui</span>
+              Hi, I&apos;m <span className="text-blue-500">Mohamed Allaoui</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
               A Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications.
