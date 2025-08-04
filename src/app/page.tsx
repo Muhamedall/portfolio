@@ -15,18 +15,7 @@ export default function Page() {
   
   return (
     <>
-     <Head>
-    <title>Mohamed Allaoui | Full Stack Developer</title>
-    <meta name="google-site-verification" content="KGVJCC9CTnHxW6UK_V-LfXurz0vFdwdhDtiSTTQDpfA" />
-    <meta name="description" content="Portfolio website of Mohamed Allaoui, a Full Stack Developer specializing in modern web technologies like Next.js, Node.js, and Laravel." />
-    <meta name="keywords" content="Mohamed Allaoui, Full Stack Developer, Web Developer Morocco, Next.js Portfolio, Node.js Developer" />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="Mohamed Allaoui | Full Stack Developer" />
-    <meta property="og:description" content="Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact." />
-    <meta property="og:image" content="/https://portfolio-mohamedallaoui.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75" />
-    <meta property="og:url" content="https://portfolio-mohamedallaoui.vercel.app" />
-    <meta name="twitter:card" content="https://portfolio-mohamedallaoui.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75" />
-  </Head>
+    
       <section id="home" className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <motion.div
           className="container mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-24"
