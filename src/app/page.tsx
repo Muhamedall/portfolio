@@ -112,8 +112,8 @@ export default function Page() {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Mohamed Allaoui",
-    "url": "https://portfolio-mohamedallaoui.vercel.app",
-    "image": "https://portfolio-mohamedallaoui.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75",
+    "url": "https://www.mohamedallaoui.com",
+    "image": "https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75",
     "sameAs": [
       "https://github.com/Muhamedall",
       "https://www.linkedin.com/in/mohamed-allaoui-38813a248"

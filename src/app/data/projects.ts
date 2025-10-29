@@ -21,7 +21,7 @@ export const projects = [
     id: 2,
     title: "My Portfolio",
     description: "A personal portfolio website showcasing Mohamed Allaoui's projects and skills.",
-    website: "https://portfolio-mohamedallaoui.vercel.app/",
+    website: "https://www.mohamedallaoui.com/",
     images: img4,
     tags: ["NextJs", "TypeScript", "TailwindCSS", "React", "NodeJs", "ExpressJs", "MySQL"],
     

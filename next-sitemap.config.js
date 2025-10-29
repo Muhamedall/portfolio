@@ -1,4 +1,4 @@
 module.exports = {
-  siteUrl: 'https://portfolio-mohamedallaoui.vercel.app',
+  siteUrl: 'https://www.mohamedallaoui.com',
   generateRobotsTxt: true,
 };
