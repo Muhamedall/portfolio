@@ -1,9 +1,9 @@
 import img1 from "../../../public/pictursProject1-StudentNest/Screenshot 2024-06-06 215406.png";
 
-import img2 from "../../../public/pictursProject2-Maranime/Capture d'écran 2024-02-15 214457.png";
+import img2 from "../../../public/pictursProject2-Maranime/marAnime.png";
 
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
-import img4 from '../../../public/pictursProject4-MyPortfolio/Screenshot 2025-07-18 100648.png';
+import img4 from '../../../public/pictursProject4-MyPortfolio/portfolio.png';
 import img5 from '../../../public/pictureProject4-MedNostalgia/Screenshot 2025-08-04 225051.png'
 
 export const projects = [

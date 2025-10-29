@@ -31,7 +31,10 @@ const ExperiencesCard: React.FC<ExperiencesCardProps> = ({
         {/* Left Section */}
         <div className="flex-1 space-y-4">
           <div className="flex items-center space-x-4 mb-4">
-            <Image src={image} alt={`${institution} logo`} width={50} height={50} className="rounded-full" />
+            <Image src={image} alt={`${institution} logo`} width={50
+
+              
+            } height={50} className="rounded-full" />
             <div>
               <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{institution}</h3>
               <p className="text-sm text-gray-500 dark:text-gray-300">{typeContrat}</p>

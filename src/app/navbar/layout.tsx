@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { MdLightMode, MdNightlight } from "react-icons/md";
 import Link from "next/link";
-import Logo1 from './WhatsApp_Image_2025-01-05_at_16.37.23__2_-removebg-preview.png';
+import Logo1 from './logo-portfoli.png';
 import Image from "next/image";
 
 import { useTheme } from "next-themes";

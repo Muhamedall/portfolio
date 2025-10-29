@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Picture from './profile.png';
+import Picture from './mee.jpeg';
 import Image from 'next/image';
 import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
@@ -40,7 +40,7 @@ export default function Page() {
             </p>
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/assets/Resume-DEV-Mohamed-Allaoui.pdf"
+                href="/assets/CV-Developer Full Stack-Mohamed-Allaoui-2025-EN.pdf"
                 className="inline-flex items-center bg-stone-600 hover:bg-stone-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
                 download
               >

@@ -2,19 +2,19 @@ import React from "react";
 import ExperiencesCard from "./ExperiencesCard";
 import logo1 from './logoApp24.webp';
 import logo2 from './logoDiaa.jpg';
-import logo3 from './logoBooking.jpg';
+import logo3 from './logo-booking.svg';
 import imgScren1 from './Screenshot 2024-12-29 161251.png';
 import imgScren2 from './Screenshot 2024-07-18 142514.png';
-import imgScren3 from './Screenshot 2025-07-17 231625.png';
+import imgScren3 from './bc.png';
 
 const experiencesData = [
   {
     institution: "Booking-Container",
-    typeContrat: "CDI",
+    typeContrat: "Full Time",
     period: "April 2025 - Present",
-    taches: "Full-stack development of a container booking platform and dashboards.",
+    taches: "Full-stack development of a container booking platform & Marketplace and dashboards.",
     chalenges: "Maintaining legacy codebases while integrating new features across Laravel, Angular, and Vue.js.",
-    tecnologies: ["Laravel", "Angular", "Vue.js", "PHP", "Git", "GitHub", "ClickUp"],
+    tecnologies: ["Laravel", "Angular", "Vue.js", "PHP","Figma","Docker", "Git", "GitHub", "ClickUp"],
     image: logo3,
     screenshot: imgScren3,
   },
