@@ -5,6 +5,8 @@ import Navbar from "./navbar/layout";
 import { ThemeProvider } from "./components/theme-provider";
 import Footer from "./footer/layout";
 import { useMemo } from "react";
+import Script from "next/script";
+
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -66,7 +68,10 @@ export default function RootLayout({
           property="og:title"
           content="Mohamed Allaoui | Full Stack Developer"
         />
-        
+         <meta
+          property="og:title"
+          content="Muhamed Allaoui | Full Stack Developer"
+        />
         <meta
           property="og:description"
           content="Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact."
@@ -83,6 +88,27 @@ export default function RootLayout({
           name="twitter:card"
           content="https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75"
         />
+
+
+       {/* Google Analytics 4 */}
+  <Script
+    strategy="afterInteractive"
+    src="https://www.googletagmanager.com/gtag/js?id=G-QYH98JC8K2" 
+  />
+  <Script
+    id="google-analytics"
+    strategy="afterInteractive"
+    dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QYH98JC8K2', {
+          page_path: window.location.pathname,
+        });
+      `,
+    }}
+  />
       </head>
 
       <body
