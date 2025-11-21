@@ -47,8 +47,9 @@ export const metadata: Metadata = {
     title: "Mohamed Allaoui | Full Stack Developer",
     description:
       "Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact.",
-    image:
-      "https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75",
+    images: [
+    "https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75"
+  ],
   },
   robots: "index, follow",
 };
