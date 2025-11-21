@@ -3,7 +3,7 @@ import CertificationsCarousel from "./CertificationsCarousel";
 
 const CertificationsPage: React.FC = () => {
   return (
-    <main className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <main className=" bg-gray-100 dark:bg-gray-900">
       <section className="container mx-auto px-4 py-12">
         <h1 className="text-lg text-center sm:text-left  md:text-xl  font-bold  text-gray-900 dark:text-white mb-8">
           Certifications

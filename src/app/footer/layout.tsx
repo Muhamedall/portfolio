@@ -1,20 +1,23 @@
-"use client"
+"use client";
 import React from "react";
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear(); // Dynamically get the current year
+  const currentYear = new Date().getFullYear();
 
   return (
-    <section className="bg-stone-600 dark:bg-black text-white py-8 w-full ">
+    <footer
+      className="bg-stone-600 dark:bg-black text-white py-8 w-full"
+      aria-label="Footer of Mohamed Allaoui portfolio website"
+    >
       <div className="px-4">
         <div className="flex flex-wrap justify-between items-start gap-10">
           {/* Get in Touch Section */}
           <div className="w-full sm:w-1/3 sm:ml-2">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">
               Get in Touch
-            </h3>
-            <div className="space-y-2 text-sm">
+            </h2>
+            <address className="not-italic space-y-2 text-sm">
               <p className="flex items-center gap-2">
                 <FaEnvelope className="sm:text-xl" />
                 <a
@@ -38,77 +41,92 @@ const Footer: React.FC = () => {
                   href="https://github.com/Muhamedall"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Mohamed Allaoui GitHub"
                   className="text-xl sm:text-3xl hover:text-yellow-400 transition"
                 >
-                  <FaGithub  />
+                  <FaGithub />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/mohamed-allaoui-38813a248/"
+                  href="https://www.linkedin.com/in/mohamed-allaoui"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Mohamed Allaoui LinkedIn"
                   className="text-xl sm:text-3xl hover:text-yellow-400 transition"
                 >
-                  <FaLinkedin  />
+                  <FaLinkedin />
                 </a>
               </div>
-            </div>
+            </address>
           </div>
+
           {/* Quick Links Section */}
-          <div className="w-full sm:w-1/6">
-            <h3 className="text-xl sm:text-2xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">
+          <nav className="w-full sm:w-1/6" aria-label="Footer Quick Links">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 border-b-2 border-yellow-500 inline-block">
               Quick Links
-            </h3>
+            </h2>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="#home"
-                  className="sm:text-xl hover:text-yellow-400 transition"
-                >
+                <a href="#home" className="sm:text-xl hover:text-yellow-400 transition">
                   Home
                 </a>
               </li>
               <li>
-                <a
-                  href="#about"
-                  className="sm:text-xl hover:text-yellow-400 transition"
-                >
+                <a href="#about" className="sm:text-xl hover:text-yellow-400 transition">
                   About
                 </a>
               </li>
-               <li>
-                <a
-                  href="#experiences"
-                  className="sm:text-xl hover:text-yellow-400 transition"
-                >
+              <li>
+                <a href="#experiences" className="sm:text-xl hover:text-yellow-400 transition">
                   Experiences
                 </a>
               </li>
               <li>
-                <a
-                  href="#projects"
-                  className="sm:text-xl hover:text-yellow-400 transition"
-                >
+                <a href="#projects" className="sm:text-xl hover:text-yellow-400 transition">
                   Projects
                 </a>
               </li>
               <li>
-                <a
-                  href="#contact"
-                  className="sm:text-xl hover:text-yellow-400 transition"
-                >
+                <a href="#contact" className="sm:text-xl hover:text-yellow-400 transition">
                   Contact
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-700 mt-8 pt-4 text-center">
-          <p className="text-sm"> &copy; {currentYear} Mohamed Allaoui. All Rights Reserved.</p>
+          <p className="text-sm">
+            &copy; {currentYear} Mohamed Allaoui. All Rights Reserved.
+          </p>
         </div>
+
+        {/* JSON-LD Structured Data for Organization */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Mohamed Allaoui",
+              "url": "https://www.mohamedallaoui.com",
+              "email": "mailto:mohamedallaoui425@gmail.com",
+              "telephone": "+212678504660",
+              "sameAs": [
+                "https://github.com/Muhamedall",
+                "https://www.linkedin.com/in/mohamed-allaoui"
+              ],
+              "jobTitle": "Full Stack Developer",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Sale",
+                "addressCountry": "Morocco"
+              }
+            }),
+          }}
+        />
       </div>
-    </section>
+    </footer>
   );
 };
 

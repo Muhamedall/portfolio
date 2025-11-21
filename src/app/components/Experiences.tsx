@@ -20,7 +20,7 @@ const experiencesData = [
   },
   {
     institution: "App24",
-    typeContrat: "Internship",
+    typeContrat: "Freelance",
     period: "October 2024 - December 2024",
     taches: "Create modern user interfaces and add i18n translation to the website.",
     chalenges: "Collaborating with a team and learning new technologies with best practices.",

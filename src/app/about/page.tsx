@@ -1,4 +1,4 @@
-"use client";
+'use client';
 
 import { motion } from "framer-motion";
 import {
@@ -9,7 +9,6 @@ import {
 import {
   SiTypescript, SiNextdotjs, SiBootstrap, SiTailwindcss,
   SiMongodb, SiPhp, SiJquery, SiGit, SiExpress ,SiDocker,
- 
 } from "react-icons/si";
 import { DiDatabase, DiScrum } from "react-icons/di";
 import { BsPcDisplay } from "react-icons/bs";
@@ -43,16 +42,14 @@ export default function About() {
     {id:20, name: "Bootstrap", icon: <SiBootstrap color="#7952B3" /> },
     {id:21, name: "Responsive Design", icon: <BsPcDisplay /> },
     {id:22, name: "Scrum", icon: <DiScrum color="#61DAFB" /> },
-    { id: 23, name: "Docker", icon: <SiDocker color="#2496ED" /> },
-     { id: 24, name: "Java", icon: <FaJava color="#007396" /> },
+    {id:23, name: "Docker", icon: <SiDocker color="#2496ED" /> },
+    {id:24, name: "Java", icon: <FaJava color="#007396" /> },
   ];
 
   const languages = [
     {id:1, name: "Arabic", stars: 4 },
-  
     {id:2, name: "French", stars: 3 },
     {id:3, name: "English", stars: 2 },
-   
   ];
 
   return (
@@ -65,68 +62,72 @@ export default function About() {
       >
         About Me
       </motion.h1>
+
       <motion.p
         className="text-lg text-center sm:text-left leading-relaxed text-gray-700 dark:text-gray-300"
-        style={{
-          display: "-webkit-box",
-          WebkitBoxOrient: "vertical",
-          overflow: "hidden",
-        }}
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         {briefText}
       </motion.p>
-      <motion.div
-        className="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        {skills.map((skill) => (
-          <motion.div
-            key={skill.id}
-            className="flex flex-col items-center gap-2 bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-700 dark:text-gray-300"
-            whileHover={{ scale: 1.1 }}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay:0.1, duration: 0.5 }}
-          >
-            <div className="text-3xl">{skill.icon}</div>
-            <span className="text-sm font-medium">{skill.name}</span>
-          </motion.div>
-        ))}
+
+      {/* Skills Section */}
+      <motion.div className="mt-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Skills & Technologies</h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          {skills.map((skill) => (
+            <motion.div
+              key={skill.id}
+              className="flex flex-col items-center gap-2 bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-700 dark:text-gray-300"
+              whileHover={{ scale: 1.1 }}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
+            >
+              <div className="text-3xl" aria-label={skill.name}>{skill.icon}</div>
+              <span className="text-sm font-medium">{skill.name}</span>
+            </motion.div>
+          ))}
+        </div>
       </motion.div>
-      <motion.div
-        className="mt-12"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-      >
-        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
-          Language Proficiency
-        </h2>
+
+      {/* Language Section */}
+      <motion.div className="mt-12" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }}>
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Language Proficiency</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {languages.map((language) => (
             <motion.div
               key={language.id}
               className="flex flex-col items-center gap-2 bg-gray-100 p-4 rounded-lg shadow-md dark:bg-gray-700 dark:text-gray-300"
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay:  0.1, duration: 0.5 }}
+              transition={{ delay: 0.1, duration: 0.5 }}
             >
               <span className="text-lg font-medium">{language.name}</span>
-              <div className="flex">
-                {Array.from({ length: language.stars }).map(() => (
-                  <AiFillStar key={language.id} color="#FFD700" />
+              <div className="flex" aria-label={`${language.name} proficiency`}>
+                {Array.from({ length: language.stars }).map((_, idx) => (
+                  <AiFillStar key={idx} color="#FFD700" />
                 ))}
               </div>
             </motion.div>
           ))}
         </div>
       </motion.div>
+
+      {/* JSON-LD Structured Data for Skills */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Mohamed Allaoui",
+          "url": "https://www.mohamedallaoui.com",
+          "jobTitle": "Full Stack Developer",
+          "skills": skills.map(skill => skill.name),
+          "knowsLanguage": languages.map(lang => lang.name)
+        })
+      }} />
     </section>
   );
 }

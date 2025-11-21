@@ -3,7 +3,7 @@ import ContactPage from "./contact"; // Adjust the path based on your folder str
 
 const Page: React.FC = () => {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen  dark:bg-gray-900">
+    <main className="flex flex-col items-center justify-center   dark:bg-gray-900">
       <ContactPage />
     </main>
   );

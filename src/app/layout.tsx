@@ -7,7 +7,6 @@ import Footer from "./footer/layout";
 import { useMemo } from "react";
 import Script from "next/script";
 
-
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -21,8 +20,37 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Mohamed Allaoui",
-  description: "Portfolio of Mohamed Allaoui, Full Stack Developer.",
+  title: "Mohamed Allaoui | Full Stack Developer",
+  description:
+    "Portfolio of Mohamed Allaoui, Full Stack Developer specializing in Next.js, Node.js, Laravel, and modern web development.",
+  keywords:
+    "Mohamed Allaoui, Full Stack Developer, Web Developer Morocco, Next.js Portfolio, Node.js Developer, Laravel Developer, Software Engineer",
+  authors: [{ name: "Mohamed Allaoui" }],
+  openGraph: {
+    title: "Mohamed Allaoui | Full Stack Developer",
+    description:
+      "Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact.",
+    url: "https://www.mohamedallaoui.com",
+    siteName: "Mohamed Allaoui Portfolio",
+    images: [
+      {
+        url: "https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75",
+        width: 1200,
+        height: 630,
+        alt: "Mohamed Allaoui Profile Picture",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mohamed Allaoui | Full Stack Developer",
+    description:
+      "Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact.",
+    image:
+      "https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75",
+  },
+  robots: "index, follow",
 };
 
 export default function RootLayout({
@@ -44,71 +72,30 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <title>Mohamed Allaoui | Full Stack Developer</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="google-site-verification"
           content="KGVJCC9CTnHxW6UK_V-LfXurz0vFdwdhDtiSTTQDpfA"
         />
-        <meta
-          name="description"
-          content="Portfolio website of Mohamed Allaoui, a Full Stack Developer specializing in modern web technologies like Next.js, Node.js, and Laravel."
-        />
+        <link rel="icon" href="/logo-port.png" />
 
-        {/* Favicon */}
-  <link rel="icon" href="./logo-port.png" /> 
-  
-        
-        <meta
-          name="keywords"
-          content="Mohamed Allaoui, Full Stack Developer, Web Developer Morocco, Next.js Portfolio, Node.js Developer"
+        {/* Google Analytics 4 */}
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-QYH98JC8K2"
         />
-        <meta name="robots" content="index, follow" />
-        <meta
-          property="og:title"
-          content="Mohamed Allaoui | Full Stack Developer"
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-QYH98JC8K2', { page_path: window.location.pathname });
+          `,
+          }}
         />
-         <meta
-          property="og:title"
-          content="Muhamed Allaoui | Full Stack Developer"
-        />
-        <meta
-          property="og:description"
-          content="Explore the professional portfolio of Mohamed Allaoui. Projects, experience, education, and contact."
-        />
-        <meta
-          property="og:image"
-          content="https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75"
-        />
-        <meta
-          property="og:url"
-          content="https://www.mohamedallaoui.com"
-        />
-        <meta
-          name="twitter:card"
-          content="https://www.mohamedallaoui.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile.0e5df6d9.png&w=3840&q=75"
-        />
-
-
-       {/* Google Analytics 4 */}
-  <Script
-    strategy="afterInteractive"
-    src="https://www.googletagmanager.com/gtag/js?id=G-QYH98JC8K2" 
-  />
-  <Script
-    id="google-analytics"
-    strategy="afterInteractive"
-    dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-QYH98JC8K2', {
-          page_path: window.location.pathname,
-        });
-      `,
-    }}
-  />
       </head>
 
       <body

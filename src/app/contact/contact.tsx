@@ -1,4 +1,4 @@
-"use client";
+'use client';
 import React, { useState } from "react";
 
 interface FormData {
@@ -41,9 +41,7 @@ const ContactPage: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!validate()) return;
-
     setIsSubmitting(true);
 
     try {
@@ -57,7 +55,6 @@ const ContactPage: React.FC = () => {
           body: JSON.stringify(formData),
         }
       );
-
       const result = await response.json();
 
       if (response.ok && result.success) {
@@ -75,9 +72,14 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="w-full max-w-5xl mx-auto flex items-center justify-center py-12 px-6 ">
+    <section
+      id="contact"
+      className="w-full max-w-5xl mx-auto flex items-center justify-center py-12 px-6"
+      aria-label="Contact Mohamed Allaoui"
+    >
       <div className="max-w-2xl w-full shadow-lg rounded-lg p-6 space-y-8 dark:bg-black">
-        <h2 className="text-3xl font-bold text-center">Contact Us</h2>
+        <h1 className="text-3xl font-bold text-center">Contact Mohamed Allaoui</h1>
+        
         {formStatus && (
           <p
             className={`text-center font-medium ${
@@ -87,10 +89,11 @@ const ContactPage: React.FC = () => {
             {formStatus}
           </p>
         )}
-        <form onSubmit={handleSubmit} className="space-y-6">
+
+        <form onSubmit={handleSubmit} className="space-y-6" aria-label="Contact form">
           <div>
             <label htmlFor="name" className="block font-medium">
-              Full Name
+              Full Name <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -98,19 +101,18 @@ const ContactPage: React.FC = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              aria-required="true"
               className={`block w-full px-4 py-2 border ${
                 errors.name ? "border-red-500" : "border-gray-300"
               } rounded-md`}
               placeholder="Your Full Name"
             />
-            {errors.name && (
-              <p className="text-red-500 text-sm">{errors.name}</p>
-            )}
+            {errors.name && <p className="text-red-500 text-sm">{errors.name}</p>}
           </div>
 
           <div>
             <label htmlFor="email" className="block font-medium">
-              Email Address
+              Email Address <span className="text-red-500">*</span>
             </label>
             <input
               type="email"
@@ -118,19 +120,18 @@ const ContactPage: React.FC = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              aria-required="true"
               className={`block w-full px-4 py-2 border ${
                 errors.email ? "border-red-500" : "border-gray-300"
               } rounded-md`}
               placeholder="Your Email Address"
             />
-            {errors.email && (
-              <p className="text-red-500 text-sm">{errors.email}</p>
-            )}
+            {errors.email && <p className="text-red-500 text-sm">{errors.email}</p>}
           </div>
 
           <div>
             <label htmlFor="message" className="block font-medium">
-              Message
+              Message <span className="text-red-500">*</span>
             </label>
             <textarea
               id="message"
@@ -138,14 +139,13 @@ const ContactPage: React.FC = () => {
               value={formData.message}
               onChange={handleChange}
               rows={4}
+              aria-required="true"
               className={`block w-full px-4 py-2 border ${
                 errors.message ? "border-red-500" : "border-gray-300"
               } rounded-md`}
               placeholder="Your Message"
             ></textarea>
-            {errors.message && (
-              <p className="text-red-500 text-sm">{errors.message}</p>
-            )}
+            {errors.message && <p className="text-red-500 text-sm">{errors.message}</p>}
           </div>
 
           <button
@@ -158,8 +158,27 @@ const ContactPage: React.FC = () => {
             {isSubmitting ? "Sending..." : "Send Message"}
           </button>
         </form>
+
+        {/* JSON-LD Structured Data for Contact */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ContactPage",
+              "mainEntity": {
+                "@type": "Person",
+                "name": "Mohamed Allaoui",
+                "url": "https://www.mohamedallaoui.com",
+                "email": "mailto:your-email@example.com",
+                "jobTitle": "Full Stack Developer",
+                "contactType": "Customer Support / General Inquiries"
+              }
+            }),
+          }}
+        />
       </div>
-    </div>
+    </section>
   );
 };
 

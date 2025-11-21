@@ -29,7 +29,7 @@ export const projects = [
   { id: 3,
     title: "Student Nest",
     description: "Developed a student housing rental website with various features including secure payment and user profiles.",
-    github: "https://github.com/Muhamedall/Project-fin-etude",
+    github: "https://github.com/Muhamedall/studentnest-fullstack-projct",
     images: img1,
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Laravel", "MySQL", "PhpMyAdmin", "Redux"],
    
@@ -47,7 +47,7 @@ export const projects = [
     id: 5,
     title: "BlogDiaa",
     description: "A blogging platform to share posts with features for image uploads and YouTube videos.",
-    website: "https://blogdiaa.free.nf/?i=1",
+    website: "https://blogdiaa.free.nf",
     images: img3,
     tags: ["HTML", "CSS", "TailwindCSS", "JavaScript", "PHP", "MySQL", "PhpMyAdmin"],
     

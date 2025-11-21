@@ -15,7 +15,7 @@ export default function Page() {
   return (
     <>
     
-      <section id="home" className="min-h-[90vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+      <section id="home" className="min-h-[30vh] flex items-center justify-center px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
         <motion.div
           className="container mx-auto flex flex-col lg:flex-row items-center gap-8 lg:gap-16 xl:gap-24"
           initial={{ opacity: 0, y: 20 }}
@@ -40,7 +40,7 @@ export default function Page() {
             </p>
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/assets/CV-Developer Full Stack-Mohamed-Allaoui-2025-EN.pdf"
+                href="/assets/Resume-developer-Mr-Allaoui.pdf"
                 className="inline-flex items-center bg-stone-600 hover:bg-stone-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
                 download
               >

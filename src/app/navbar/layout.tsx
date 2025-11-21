@@ -18,7 +18,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const { setTheme } = useTheme();
 
   return (
-    <section className="min-h-screen bg-gray-100 dark:bg-gray-900">
+    <section className=" bg-gray-100 dark:bg-gray-900">
       {/* Navigation Bar */}
       <nav className="bg-stone-600 dark:bg-black">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
