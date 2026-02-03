@@ -40,7 +40,7 @@ export default function Page() {
             </p>
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/assets/Resume-developer-Mr-Allaoui.pdf"
+                href="/assets/Resume-Dev-Mr-Allaoui.pdf"
                 className="inline-flex items-center bg-stone-600 hover:bg-stone-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
                 download
               >
