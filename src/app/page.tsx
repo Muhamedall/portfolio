@@ -35,6 +35,7 @@ export default function Page() {
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
               A Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications.
             </p>
+            
             <p className="text-base sm:text-lg mb-8 leading-relaxed">
               I enjoy turning ideas into innovative solutions and delivering impactful digital experiences. Always eager to learn and grow, I strive to make a difference through technology.
             </p>
