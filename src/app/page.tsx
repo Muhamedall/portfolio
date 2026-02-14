@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Picture from './mee.jpeg';
+import Picture from './profile.png';
 import Image from 'next/image';
 import AboutPage from './about/page';
 import ProjectsPage from './projects/page';
@@ -30,7 +30,7 @@ export default function Page() {
             transition={{ delay: 0.3, duration: 1 }}
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
-              Hi, I&apos;m <span className="text-blue-500">Mohamed Allaoui</span>
+              Hi, I&apos;m <span className="text-lime-600">Mohamed Allaoui</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
               A Full Stack Developer passionate about creating modern, responsive, and user-friendly web applications.
