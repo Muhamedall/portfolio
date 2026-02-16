@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState<string | null>(null);
-
+    const apiUrl = process.env.NEXT_PUBLIC_API_URL ;
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://backendportfolio-1-owg2.onrender.com/api/contacts",
+         `${apiUrl}/api/contacts`, 
         {
           method: "POST",
           headers: {

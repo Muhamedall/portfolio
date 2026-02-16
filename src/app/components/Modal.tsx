@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import { FiX } from "react-icons/fi";
 
 interface ModalProps {
   isOpen: boolean;
@@ -25,13 +26,18 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, image }) => {
         />
 
         {/* Close Button */}
-        <button
-          onClick={onClose}
-          className="absolute top-4 right-4 text-rose-500 text-3xl hover:text-gray-300"
-          aria-label="Close Modal"
-        >
-          ✕
-        </button>
+     <button
+  onClick={onClose}
+  className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center
+             rounded-full bg-red-700 text-white
+             hover:bg-red-200 hover:text-red-700
+             transition duration-200 shadow-sm
+             focus:outline-none focus:ring-2 focus:ring-red-400"
+  aria-label="Close Modal"
+>
+  <FiX className="text-xl" />
+</button>
+
       </div>
     </div>
   );

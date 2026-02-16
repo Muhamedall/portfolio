@@ -5,6 +5,7 @@ import img2 from "../../../public/pictursProject2-Maranime/marAnime.png";
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
 import img4 from '../../../public/pictursProject4-MyPortfolio/portfolio.png';
 import img5 from '../../../public/pictureProject4-MedNostalgia/Screenshot 2025-08-04 225051.png'
+import img6 from "../../../public/pictureProject5-Fotbalstate/Screenshot 2026-02-16 001751.png"; // <-- Add your image path
 
 export const projects = [
   {
@@ -34,15 +35,16 @@ export const projects = [
     tags: ["HTML", "CSS", "TailwindCSS", "React", "Laravel", "MySQL", "PhpMyAdmin", "Redux"],
    
   },
+
   {
     id: 4,
-    title: "marAnime",
-    description: "A platform for anime enthusiasts to browse, rate, and review anime series and movies.",
-    github: "https://github.com/Muhamedall/Project-marAnimeM",
-    images: img2,
-    tags: ["HTML", "CSS", "TailwindCSS", "React", "Strapi API"],
-    
+    title: "Football Stats",
+    description: "A performance analytics web application for managing football players and visualizing their statistics through an interactive dashboard. Includes player management, performance tracking, and dynamic data visualization.",
+    github: "https://github.com/Muhamedall/football_stats", 
+    images: img6,
+    tags: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
   },
+  
   {
     id: 5,
     title: "BlogDiaa",
@@ -50,6 +52,16 @@ export const projects = [
     website: "https://blogdiaa.free.nf",
     images: img3,
     tags: ["HTML", "CSS", "TailwindCSS", "JavaScript", "PHP", "MySQL", "PhpMyAdmin"],
+    
+  },
+  
+  {
+    id: 6,
+    title: "marAnime",
+    description: "A platform for anime enthusiasts to browse, rate, and review anime series and movies.",
+    github: "https://github.com/Muhamedall/Project-marAnimeM",
+    images: img2,
+    tags: ["HTML", "CSS", "TailwindCSS", "React", "Strapi API"],
     
   },
   
