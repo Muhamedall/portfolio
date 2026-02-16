@@ -16,7 +16,7 @@ const ContactPage: React.FC = () => {
   const [errors, setErrors] = useState<Partial<FormData>>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formStatus, setFormStatus] = useState<string | null>(null);
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL ;
+
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
 
     try {
       const response = await fetch(
-         `${apiUrl}/api/contacts`, 
+        "https://mushy-cymbre-mohamedallaoui-e97a1743.koyeb.app/api/contacts",
         {
           method: "POST",
           headers: {
