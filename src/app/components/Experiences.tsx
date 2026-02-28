@@ -3,9 +3,12 @@ import ExperiencesCard from "./ExperiencesCard";
 import logo1 from './logoApp24.webp';
 import logo2 from './logoDiaa.jpg';
 import logo3 from './logo-booking.svg';
-import imgScren1 from './Screenshot 2024-12-29 161251.png';
-import imgScren2 from './Screenshot 2024-07-18 142514.png';
-import imgScren3 from './bc.png';
+import app1 from './Screenshot 2024-12-29 161251.png';
+import diaa1 from './Screenshot 2024-07-18 142514.png';
+import diaa2 from './diaa2.png';
+import imgScren1bc from './bc.png';
+import imgScren2bc from './bc2.png';
+import app2 from './app2.png';
 
 const experiencesData = [
   {
@@ -14,9 +17,10 @@ const experiencesData = [
     period: "April 2025 - January 2026",
     taches: "Full-stack development of a container booking platform & Marketplace and dashboards.",
     chalenges: "Maintaining legacy codebases while integrating new features across Laravel, Angular, and Vue.js.",
-    tecnologies: ["Laravel", "Angular", "Vue.js", "PHP","Figma","Docker", "GitHub", "ClickUp"],
+    tecnologies: ["Laravel", "Angular", "Vue.js", "Spring Boot","Spring Boot", "PHP","Figma","Docker", "GitHub", "ClickUp"],
     image: logo3,
-    screenshot: imgScren3,
+    
+    screenshots: [imgScren1bc, imgScren2bc], 
   },
   {
     institution: "App24",
@@ -26,7 +30,7 @@ const experiencesData = [
     chalenges: "Collaborating with a team and learning new technologies with best practices.",
     tecnologies: ["HTML", "CSS", "TailwindCSS", "Next.js", "TypeScript", "React.js", "Laravel"],
     image: logo1,
-    screenshot: imgScren1
+    screenshots: [app1, app2],
   },
   {
     institution: "Diaaland",
@@ -36,7 +40,9 @@ const experiencesData = [
     chalenges: "Built the website using vanilla programming languages and handled deployment.",
     tecnologies: ["HTML", "CSS", "JavaScript", "TailwindCSS", "PHP", "MySQL", "phpMyAdmin"],
     image: logo2,
-    screenshot: imgScren2,
+   
+    screenshots: [diaa2, diaa1], 
+
     
   },
 ];
@@ -54,7 +60,7 @@ const Experiences: React.FC = () => {
           chalenges={exp.chalenges}
           tecnologies={exp.tecnologies}
           image={exp.image}
-          screenshot={exp.screenshot}
+          screenshots={exp.screenshots}
         
         />
       ))}
