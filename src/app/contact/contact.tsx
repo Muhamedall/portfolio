@@ -46,7 +46,7 @@ const ContactPage: React.FC = () => {
 
     try {
       const response = await fetch(
-        "https://mushy-cymbre-mohamedallaoui-e97a1743.koyeb.app/api/contacts",
+        "https://backendportfolio-mohamedallaoui2069-r4nvmprp.leapcell.dev/api/contacts",
         {
           method: "POST",
           headers: {

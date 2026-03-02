@@ -17,7 +17,7 @@ const experiencesData = [
     period: "April 2025 - January 2026",
     taches: "Full-stack development of a container booking platform & Marketplace and dashboards.",
     chalenges: "Maintaining legacy codebases while integrating new features across Laravel, Angular, and Vue.js.",
-    tecnologies: ["Laravel", "Angular", "Vue.js", "Spring Boot","Spring Boot", "PHP","Figma","Docker", "GitHub", "ClickUp"],
+    tecnologies: ["Laravel", "Angular", "Vue.js", "Spring Boot", "PHP","Figma","Docker", "GitHub", "ClickUp"],
     image: logo3,
     
     screenshots: [imgScren1bc, imgScren2bc], 
