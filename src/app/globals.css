@@ -16,7 +16,9 @@ body {
   position: relative;
   background-color: #1a1a2e; /* Dark blue color for the night sky */
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* Create the moon */
 .moon {
   position: absolute;
