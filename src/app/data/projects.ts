@@ -3,7 +3,6 @@ import img1 from "../../../public/pictursProject1-StudentNest/Screenshot 2024-06
 import img2 from "../../../public/pictursProject2-Maranime/marAnime.png";
 
 import img3 from "../../../public/pictursProject3-BlogDiaa/Screenshot 2024-08-06 134355.png";
-import img4 from '../../../public/pictursProject4-MyPortfolio/portfolio.png';
 import img5 from '../../../public/pictureProject4-MedNostalgia/Screenshot 2025-08-04 225051.png'
 import img6 from "../../../public/pictureProject5-Fotbalstate/Screenshot 2026-02-16 001751.png"; // <-- Add your image path
 
@@ -17,17 +16,8 @@ export const projects = [
     tags: ["Python", "NextJs", "TypeScript", "Laravel", "TailwindCSS", "Shadcn UI"],
    
   },
-  {
-    
-    id: 2,
-    title: "My Portfolio",
-    description: "A personal portfolio website showcasing Mohamed Allaoui's projects and skills.",
-    website: "https://www.mohamedallaoui.com/",
-    images: img4,
-    tags: ["NextJs", "TypeScript", "TailwindCSS", "React", "NodeJs", "ExpressJs", "MySQL"],
-    
-  },
-  { id: 3,
+
+  { id: 2,
     title: "Student Nest",
     description: "Developed a student housing rental website with various features including secure payment and user profiles.",
     github: "https://github.com/Muhamedall/studentnest-fullstack-projct",
@@ -37,7 +27,7 @@ export const projects = [
   },
 
   {
-    id: 4,
+    id: 3,
     title: "Football Stats",
     description: "A performance analytics web application for managing football players and visualizing their statistics through an interactive dashboard. Includes player management, performance tracking, and dynamic data visualization.",
     github: "https://github.com/Muhamedall/football_stats", 
@@ -46,7 +36,7 @@ export const projects = [
   },
   
   {
-    id: 5,
+    id: 4,
     title: "BlogDiaa",
     description: "A blogging platform to share posts with features for image uploads and YouTube videos.",
     website: "https://blogdiaa.free.nf",
@@ -56,7 +46,7 @@ export const projects = [
   },
   
   {
-    id: 6,
+    id: 5,
     title: "marAnime",
     description: "A platform for anime enthusiasts to browse, rate, and review anime series and movies.",
     github: "https://github.com/Muhamedall/Project-marAnimeM",

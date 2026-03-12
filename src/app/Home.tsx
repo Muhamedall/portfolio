@@ -35,12 +35,11 @@ export default function Page() {
               Hi, I&apos;m <span className="text-lime-600">Mohamed Allaoui</span>
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
-              A Full-Stack Developer with 2+ years building production-grade marketplaces, booking platforms, and dashboards using React, Angular, Laravel, and Spring Boot.
+              Full-Stack Developer
+2+ years building SaaS, logistics, and e-commerce platforms using React, Angular, Laravel, and Spring Boot.
             </p>
             
-            <p className="text-base sm:text-lg mb-8 leading-relaxed">
-              I turn complex requirements into scalable, real-world solutions — from REST APIs and RBAC systems to multilingual interfaces and automated workflows. Always shipping, always learning
-            </p>
+          
             <div className="flex justify-center lg:justify-start">
               <a
                 href="/assets/RESUME-DEV-ALLAOUI.pdf"
