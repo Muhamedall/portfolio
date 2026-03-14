@@ -36,7 +36,7 @@ export default function Page() {
             </h1>
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-6 leading-relaxed">
               Full-Stack Developer
-2+ years building SaaS, logistics, and e-commerce platforms using React, Angular, Laravel, and Spring Boot.
+2+ years building SaaS, logistics, and e-commerce platforms using Laravel , React and Angular .
             </p>
             
           

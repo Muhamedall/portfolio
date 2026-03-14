@@ -22,7 +22,7 @@ export const projects = [
     description: "Developed a student housing rental website with various features including secure payment and user profiles.",
     github: "https://github.com/Muhamedall/studentnest-fullstack-projct",
     images: img1,
-    tags: ["HTML", "CSS", "TailwindCSS", "React", "Laravel", "MySQL", "PhpMyAdmin", "Redux"],
+    tags: [  "Laravel", "React","TailwindCSS" , "MySQL", "PhpMyAdmin", "Redux"],
    
   },
 
@@ -32,7 +32,7 @@ export const projects = [
     description: "A performance analytics web application for managing football players and visualizing their statistics through an interactive dashboard. Includes player management, performance tracking, and dynamic data visualization.",
     github: "https://github.com/Muhamedall/football_stats", 
     images: img6,
-    tags: ["Python", "Flask", "HTML", "CSS", "JavaScript"],
+    tags: ["Python", "Flask",  "JavaScript"],
   },
   
   {
@@ -51,7 +51,7 @@ export const projects = [
     description: "A platform for anime enthusiasts to browse, rate, and review anime series and movies.",
     github: "https://github.com/Muhamedall/Project-marAnimeM",
     images: img2,
-    tags: ["HTML", "CSS", "TailwindCSS", "React", "Strapi API"],
+    tags: ["React", "TailwindCSS",  "Strapi API"],
     
   },
   
