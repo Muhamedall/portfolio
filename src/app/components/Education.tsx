@@ -2,13 +2,13 @@ import React from "react";
 import EducationCard from "./EducationCard";
 
 const educationData = [
-    /*{
+    {
       
     "institution": "High Tech - Rabat",
     "degree": "Bachelor in Computer Engineering",
     "period": "2025 - 2026",
     "description": "Currently pursuing a Bachelor in Computer Engineering, focusing on advanced computing and software development."
-  },*/
+  },
   {
         "institution": "OFPPT CFPM - Skhirat",
         "degree": "Specialized Technician Diploma in Full Stack Development",
