@@ -6,10 +6,10 @@ interface EducationCardProps {
   institution: string;
   degree: string;
   period: string;
-  description?: string;
+ 
 }
 
-const EducationCard: React.FC<EducationCardProps> = ({ institution, degree, period, description }) => {
+const EducationCard: React.FC<EducationCardProps> = ({ institution, degree, period }) => {
   return (
     <div className="dark:bg-black  shadow-lg rounded-lg p-6 transform transition-transform hover:scale-105 duration-300 ease-in-out">
       <div className="flex items-center mb-4">
@@ -21,7 +21,6 @@ const EducationCard: React.FC<EducationCardProps> = ({ institution, degree, peri
         <p className="text-sm">{period}</p>
       </div>
       <p className="text-gray-800 dark:text-gray-300 font-medium">{degree}</p>
-      {description && <p className="mt-3 text-gray-600 dark:text-gray-400">{description}</p>}
     </div>
   );
 };

@@ -44,7 +44,8 @@ export default function Page() {
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              Full-Stack Developer building modern, scalable web applications with Laravel, React, and modern technologies.
+              Full-Stack Developer specializing in Laravel, Angular, and React, with experience building web applications and SaaS platforms.
+
             </p>
 
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4">
@@ -56,7 +57,7 @@ export default function Page() {
               </a>
 
               <a
-                href="/assets/RESUME-DEVELOPER-mr-ALLAOUI.pdf"
+                href="/assets/RESUME-DEVELOPER-MR-ALLAOUI.pdf"
                 download
                 className="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
               >
