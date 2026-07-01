@@ -57,7 +57,7 @@ export default function Page() {
               </a>
 
               <a
-                href="/assets/RESUME-DEVELOPER-MR-ALLAOUI.pdf"
+                href="/assets/RESUME-DEVELOPER-MR-ALLAOUI.pdf" 
                 download
                 className="bg-gray-800 hover:bg-gray-900 text-white font-semibold py-3 px-6 rounded-lg transition duration-300"
               >
