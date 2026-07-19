@@ -40,12 +40,11 @@ export default function Page() {
           <div className="text-center sm:text-left">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 leading-tight">
               Hi, I&apos;m{' '}
-              <span className="text-lime-600">Mohamed Allaoui</span>
+              <span className="text-lime-600 ">Mohamed Allaoui</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-              Full-Stack Developer specializing in Laravel, Angular, and React, with experience building web applications and SaaS platforms.
-
+Full-Stack Developer specializing in Laravel, Angular, and React, with experience in production web application development and AI integration
             </p>
 
             <div className="flex flex-col sm:flex-row items-center sm:items-start justify-center sm:justify-start gap-4">
@@ -57,7 +56,7 @@ export default function Page() {
               </a>
 
               <a
-                href="/assets/resume-mr-allaoui.pdf" 
+                href="/assets/Mohamed_Allaoui_Full_Stack_Developer_Resume.pdf" 
 
                 
                 download

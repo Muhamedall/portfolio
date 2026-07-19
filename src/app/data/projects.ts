@@ -24,7 +24,7 @@ export const projects: Project[] = [
       "Full-stack invoicing SaaS (Angular / Laravel) with client management, quote creation, and Stripe payments.",
     github: "https://github.com/Muhamedall/Quvio",
     images: img7,
-    tags: ["Laravel", "Angular", "n8n", "Stripe API"],
+    tags: ["Laravel", "Angular", "n8n", " Gemini AI"],
   },
   {
     id: 2,

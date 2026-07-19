@@ -7,8 +7,8 @@ import {
 } from "react-icons/fa";
 import {
   SiTypescript, SiNextdotjs, SiBootstrap, SiTailwindcss,
-  SiMongodb, SiPhp, SiJquery, SiGit, SiExpress, SiDocker, SiN8N,
-  SiSpringboot, SiSymfony, SiOpenai, SiPostgresql, SiSonarqube,
+  SiMongodb, SiPhp,  SiGit, SiExpress, SiDocker, SiN8N,
+   SiSymfony, SiOpenai, SiPostgresql, SiSonarqube,
 } from "react-icons/si";
 import { DiDatabase } from "react-icons/di";
 import { AiFillStar } from "react-icons/ai";
@@ -32,7 +32,6 @@ const skillCategories = [
       { id: 6, name: "Angular", icon: <FaAngular color="#dd1b16" /> },
       { id: 7, name: "TailwindCSS", icon: <SiTailwindcss color="#38B2AC" /> },
       { id: 8, name: "Bootstrap", icon: <SiBootstrap color="#7952B3" /> },
-      { id: 9, name: "jQuery", icon: <SiJquery color="#0769AD" /> },
     ],
   },
   {
@@ -50,7 +49,6 @@ const skillCategories = [
       { id: 5, name: "Python", icon: <FaPython color="#306998" /> },
       { id: 6, name: "Node.js", icon: <FaNodeJs color="#339933" /> },
       { id: 7, name: "Express.js", icon: <SiExpress color="#e5e5e5" /> },
-      { id: 8, name: "Spring Boot", icon: <SiSpringboot color="#6DB33F" /> },
     ],
   },
   {
@@ -113,9 +111,8 @@ const cardVariants = {
 };
 
 export default function About() {
-  const briefText = `I am a passionate Full Stack Developer with expertise in designing and building efficient, 
-  user-friendly, and innovative web applications. My experience includes working with various 
-  modern technologies to deliver top-notch solutions for clients.`;
+  const briefText = `Full-Stack Developer specializing in Laravel, Angular, and React, with hands-on experience building and maintaining production
+web applications, designing secure RESTful APIs, integrating payment solutions, and implementing AI-powered features.`;
 
   return (
     <section className="px-4 sm:px-6 py-10 sm:py-12 max-w-6xl mx-auto w-full">
