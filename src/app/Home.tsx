@@ -26,7 +26,7 @@ export default function Page() {
           <div className="flex-shrink-0">
             <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden ring-4 ring-lime-600 ring-offset-4 ring-offset-white dark:ring-offset-gray-950 shadow-lg">
               <Image
-                src="/assets/pictures/profile-picture.png"
+                src="/assets/pictures/pic-profile.png"
                 alt="Mohamed Allaoui"
                 width={160}
                 height={160}
