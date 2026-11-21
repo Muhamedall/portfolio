@@ -14,7 +14,7 @@ const experiencesData = [
   {
     institution: "Booking-Container ",
     typeContrat: "Full Time",
-    period: "April 2025 - March 2026",
+    period: "April 2025 - January 2026",
     taches: "Full-stack development of a container booking platform & Marketplace and dashboards.",
     chalenges: "Maintaining legacy codebases while integrating new features across Laravel, Angular",
     tecnologies: ["Laravel", "Angular","Figma","Docker", "GitHub"],
