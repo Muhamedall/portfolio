@@ -56,7 +56,7 @@ Full-Stack Developer specializing in Laravel, Angular, and React, with experienc
               </a>
 
               <a
-                href="/assets/CV_Mohamed_Allaoui.pdf" 
+                href="/assets/CV_Mohamed_Allaoui_dev.pdf" 
 
                 
                 download
